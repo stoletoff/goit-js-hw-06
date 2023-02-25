@@ -6,6 +6,6 @@ quantityCategories.forEach(elem => {
     const textTitle = elem.firstElementChild.textContent;
     const quantityElem = elem.lastElementChild.children.length;
     console.log(`Category: ${textTitle}`);
-    console.log(`Elements:${quantityElem}`);
+    console.log(`Elements: ${quantityElem}`);
 });
 
