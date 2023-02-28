@@ -18,7 +18,7 @@ function makeControlForm(event) {
     elements: { email, password },
   } = event.currentTarget;
   if (email.value.trim() === '' || password.value.trim() === '') {
-    return alert(`Пожалуйста, заполните форму email и  password`);
+    return alert(`Пожалуйста, заполните поля форм email и  password`);
   }
   const objectFormDate = { email: email.value, password: password.value };
   console.log(objectFormDate);
