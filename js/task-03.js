@@ -21,7 +21,7 @@ const images = [
 const galleryRef = document.querySelector(`.gallery`);
 const makeGalerryListMarkup = ({ url, alt }) =>
   `<li class="gallery__list"><img class="gallery__image" src=${url} alt=${alt} width="450" height="460"></li>`;
-const makeGalleryListItem = images.map(makeGalerryListMarkup);
+const makeGalleryListItem = images.map(makeGalerryListMarkup).join('');
   galleryRef.insertAdjacentHTML('afterbegin', makeGalleryListItem);
 
   
